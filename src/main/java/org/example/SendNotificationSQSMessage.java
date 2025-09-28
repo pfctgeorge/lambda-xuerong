@@ -2,9 +2,14 @@ package org.example;
 
 import java.util.List;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
 public class SendNotificationSQSMessage {
 
     int senderUserId;
-    List<Integer> notifyUserIds;
+    List<Integer> userIdsToNotify;
     int messageId;
 }

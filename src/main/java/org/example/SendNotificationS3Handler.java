@@ -30,7 +30,7 @@ import software.amazon.awssdk.services.s3.presigner.model.PresignedGetObjectRequ
 
 
 @Log4j2
-public class SendNotificationHandler implements RequestHandler<SQSEvent, Void> {
+public class SendNotificationS3Handler implements RequestHandler<SQSEvent, Void> {
 
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
 

@@ -8,7 +8,5 @@ import lombok.Data;
 public class MessageNotification {
 
     int senderUserId;
-    Integer groupChatId;
-    Integer receiverUserId;
     String getObjectRequestPresignedUrl;
 }
